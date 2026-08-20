@@ -84,13 +84,6 @@ h1 {
   color: var(--pink);
 }
 
-.hero-sub {
-  font-size: 1.1rem;
-  color: var(--ink);
-  margin: 0;
-  font-weight: 600;
-}
-
 /* ---- Cards ---- */
 
 .card {
@@ -117,6 +110,12 @@ h1 {
   margin: 4px 0;
 }
 
+.weather-note {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 12px 0 0;
+}
+
 /* ---- Map ---- */
 
 .map {
@@ -140,6 +139,12 @@ h1 {
 
 .map-fallback.is-hidden { display: none; }
 
+.maps-label {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 0 0 8px;
+}
+
 .location-buttons {
   display: flex;
   flex-direction: column;
@@ -151,9 +156,9 @@ h1 {
   display: block;
   text-align: center;
   background: var(--mint);
-  color: #fff;
+  color: var(--ink);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   padding: 14px 16px;
   border-radius: 14px;
   font-size: 1.05rem;
