@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suraya's 4th Birthday Party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="confetti" aria-hidden="true">🎈 🎉 🎂 🎈</div>
+  <div class="photo-frame">
+    <img
+      src="images/suraya.jpg"
+      alt="Suraya smiling on a carousel"
+      class="hero-photo"
+      onerror="this.closest('.photo-frame').classList.add('photo-missing')"
+    >
+    <div class="photo-fallback" aria-hidden="true">🎠</div>
+  </div>
+  <h1>Happy 4th Birthday, Suraya!</h1>
+  <p class="hero-sub">You're invited to celebrate with us 🎊</p>
+</header>
+
+<main>
+
+  <section class="card" id="when">
+    <h2><span class="icon" aria-hidden="true">📅</span> Time &amp; Date</h2>
+    <p class="big-line">Saturday, August 22nd</p>
+    <p class="big-line">10:30 AM – 12:30 PM</p>
+  </section>
+
+  <section class="card" id="where">
+    <h2><span class="icon" aria-hidden="true">📍</span> Location</h2>
+    <p>Larz Anderson Playground and Picnic Area</p>
+
+    <div id="map-fallback" class="map-fallback">
+      <p>🗺️ Interactive map coming soon — for now, tap a button below to open each spot directly in Google Maps.</p>
+    </div>
+    <div id="map" class="map" role="img" aria-label="Map of Larz Anderson Park showing parking, playground, and picnic area"></div>
+
+    <div class="location-buttons">
+      <a class="loc-btn" href="https://maps.app.goo.gl/b5JTvHNhVi7S8mA49" target="_blank" rel="noopener">
+        🚗 Parking Lot
+      </a>
+      <a class="backup-link" href="https://maps.app.goo.gl/iJma3K6AAWKAbj5QA" target="_blank" rel="noopener">
+        Lot full? Backup parking →
+      </a>
+      <a class="loc-btn" href="https://maps.app.goo.gl/1Dag9SxWDHmSphoL7" target="_blank" rel="noopener">
+        🛝 Playground
+      </a>
+      <a class="loc-btn" href="https://maps.app.goo.gl/VAikyufZDiDzn8af7" target="_blank" rel="noopener">
+        🧺 Picnic Area <span class="btn-sub">(food &amp; drinks)</span>
+      </a>
+    </div>
+    <p class="note">These three spots are a short walk apart but not all visible from each other — tap any button above for turn-by-turn walking directions.</p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2><span class="icon" aria-hidden="true">📞</span> Day-of Contact</h2>
+    <p class="contact-line">Will: <a href="tel:+17742400615">774-240-0615</a></p>
+    <p class="contact-line">Rahela: <a href="tel:+17814246613">781-424-6613</a></p>
+  </section>
+
+  <section class="card" id="bring">
+    <h2><span class="icon" aria-hidden="true">🎁</span> What to Bring</h2>
+    <p>Please, no gifts! We're all so glad you can celebrate with us.</p>
+  </section>
+
+  <section class="card" id="after">
+    <h2><span class="icon" aria-hidden="true">🎶</span> Anything Going On After?</h2>
+    <p>The party officially ends at 12:30&nbsp;PM. If you're looking for an afternoon activity, we'd recommend coming to our home neighborhood for <a href="https://www.jpporchfest.org/copy-of-porchfest-2025" target="_blank" rel="noopener">Jamaica Plain Porchfest</a>. Local bands will be playing around the neighborhood — our home base will be the nearby Brendan Behan Pub.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Can't wait to celebrate with you! 💛</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
