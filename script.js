@@ -6,47 +6,41 @@
 // which work with no setup at all.
 // ---------------------------------------------------------------------------
 const CONFIG = {
-  // TODO: replace with a real Google Maps JavaScript API key (see README.md)
-  googleMapsApiKey: "YOUR_GOOGLE_MAPS_API_KEY",
+  googleMapsApiKey: "AIzaSyDEwERTxDszpTE8_N3zvROR-CQQaBjGbaQ",
 
-  // TODO: replace with the real center of the three locations below
-  // (placeholder is the approximate center of Larz Anderson Park, Brookline MA)
-  center: { lat: 42.3199, lng: -71.1329 },
+
+  center: { lat: 42.312074, lng: -71.137693 },
   zoom: 17,
 
-  // TODO: replace each lat/lng with the exact pin from its maps.app.goo.gl link.
-  // Easiest way: open the link on your phone/desktop, tap "..." > Share or
-  // look at the address bar for something like "@42.xxxxx,-71.xxxxx,17z" —
-  // those two numbers are lat and lng.
+
   locations: [
     {
       id: "parking",
-      label: "Parking Lot",
+      label: "Parking Lot: 358 Goddard Ave",
       icon: "🚗",
-      lat: 42.3199, // TODO
-      lng: -71.1329, // TODO
+      lat: 42.313218, // TODO
+      lng: -71.138240, // TODO
       mapsLink: "https://maps.app.goo.gl/b5JTvHNhVi7S8mA49"
     },
     {
       id: "playground",
       label: "Playground",
       icon: "🛝",
-      lat: 42.3199, // TODO
-      lng: -71.1329, // TODO
+      lat: 42.312357, // TODO
+      lng: -71.138492, // TODO
       mapsLink: "https://maps.app.goo.gl/1Dag9SxWDHmSphoL7"
     },
     {
       id: "picnic",
       label: "Picnic Area",
       icon: "🧺",
-      lat: 42.3199, // TODO
-      lng: -71.1329, // TODO
+      lat: 42.311572, // TODO
+      lng: -71.136703, // TODO
       mapsLink: "https://maps.app.goo.gl/VAikyufZDiDzn8af7"
     }
   ]
 
-  // Note: backup parking is intentionally left out of this list — per the
-  // request, it should be reachable as a link but not shown as a pin.
+
 };
 
 // Renders each marker with a colored circular badge instead of a stock pin,
