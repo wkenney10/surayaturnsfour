@@ -153,7 +153,7 @@ h1 {
   margin-top: 4px;
 }
 
-.loc-btn {
+.card a.loc-btn {
   display: block;
   text-align: center;
   background: var(--mint);
