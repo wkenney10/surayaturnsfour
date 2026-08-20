@@ -187,6 +187,18 @@ h1 {
   margin: 14px 0 0;
 }
 
+.note a.subtle-link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
+.note a.subtle-link:hover,
+.note a.subtle-link:focus-visible {
+  opacity: 0.8;
+}
+
 /* ---- Contact ---- */
 
 .contact-line {
