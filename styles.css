@@ -233,3 +233,59 @@ footer {
   h1 { font-size: 1.7rem; }
   .photo-frame { width: 160px; height: 160px; }
 }
+
+/* ---- Photo modal ---- */
+
+body.modal-open { overflow: hidden; }
+
+.photo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.photo-modal[hidden] { display: none; }
+
+.photo-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(58, 46, 80, 0.8);
+}
+
+.photo-modal-content {
+  position: relative;
+  z-index: 1;
+  max-width: min(92vw, 640px);
+  max-height: 85vh;
+}
+
+.photo-modal-content img {
+  display: block;
+  width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.photo-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+}

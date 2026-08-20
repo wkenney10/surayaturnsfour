@@ -58,7 +58,7 @@
         🧺 Picnic Area 
       </a>
     </div>
-    <p class="note">The picnic area where we'll be officially set up is tucked into the woods around the bend from the playground. <a class="subtle-link" href="images/picnic-tables.jpeg" target="_blank" rel="noopener">Picnic tables 11 and 12.</a></p>
+    <p class="note">The picnic area where we'll be officially set up is tucked into the woods around the bend from the playground. <a class="subtle-link" href="images/picnic-tables.jpeg" target="_blank" rel="noopener" data-modal-image="images/picnic-tables.jpeg" data-modal-alt="Picnic tables 11 and 12, tucked in the woods near the playground">Picnic tables 11 and 12.</a></p>
   </section>
 
   <section class="card" id="contact">
@@ -82,6 +82,14 @@
 <footer>
   <p>Can't wait to celebrate with you! 💛</p>
 </footer>
+
+<div id="photo-modal" class="photo-modal" role="dialog" aria-modal="true" aria-label="Photo" hidden>
+  <div class="photo-modal-backdrop" data-modal-close></div>
+  <button type="button" class="photo-modal-close" aria-label="Close photo" data-modal-close>&times;</button>
+  <div class="photo-modal-content">
+    <img id="photo-modal-img" src="" alt="">
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

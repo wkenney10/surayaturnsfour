@@ -122,3 +122,50 @@ function loadGoogleMaps() {
 }
 
 loadGoogleMaps();
+
+// ---------------------------------------------------------------------------
+// Photo modal — any link with data-modal-image opens its photo in a modal
+// (mobile tap and desktop click both just fire a click event, so one
+// handler covers both) instead of navigating away. If JS fails to load,
+// the link's normal href still opens the photo directly, so it always works.
+// ---------------------------------------------------------------------------
+function setupPhotoModal() {
+  const modal = document.getElementById("photo-modal");
+  if (!modal) return;
+
+  const img = document.getElementById("photo-modal-img");
+  let lastTrigger = null;
+
+  function openModal(trigger) {
+    lastTrigger = trigger;
+    img.src = trigger.dataset.modalImage;
+    img.alt = trigger.dataset.modalAlt || "";
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    modal.querySelector(".photo-modal-close").focus();
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    img.src = "";
+    document.body.classList.remove("modal-open");
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  document.querySelectorAll("[data-modal-image]").forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal(trigger);
+    });
+  });
+
+  modal.querySelectorAll("[data-modal-close]").forEach((el) => {
+    el.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.hidden) closeModal();
+  });
+}
+
+setupPhotoModal();
