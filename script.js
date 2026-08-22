@@ -34,8 +34,8 @@ const CONFIG = {
       id: "picnic",
       label: "Picnic Area",
       icon: "🧺",
-      lat: 42.311572, // TODO
-      lng: -71.136703, // TODO
+      lat: 42.311566, // TODO
+      lng: -71.137573, // TODO
       mapsLink: "https://maps.app.goo.gl/VAikyufZDiDzn8af7"
     }
   ]
