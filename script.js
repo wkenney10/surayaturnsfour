@@ -36,7 +36,7 @@ const CONFIG = {
       icon: "🧺",
       lat: 42.311566, // TODO
       lng: -71.137573, // TODO
-      mapsLink: "https://maps.app.goo.gl/VAikyufZDiDzn8af7"
+      mapsLink: "https://maps.app.goo.gl/TzXbKoBUi32GQvvZ6?g_st=ic"
     }
   ]
 
